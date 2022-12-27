@@ -14,10 +14,13 @@ body {
 }
 
 main {
-    width: 30rem;
-    height: 45rem;
+    width: 28rem;
+    height: 50rem;
     background-color: black;
     border: 1px solid white;
+    overflow: hidden;
+    border-radius: 50px;
+
 
 
 }
@@ -28,6 +31,7 @@ main {
     gap: 1rem;
     width: max-content;
     margin: auto;
+
 
 
 }
@@ -46,6 +50,7 @@ main {
     border-radius: 50%;
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
 
 .sign {
@@ -74,11 +79,24 @@ main {
 }
 
 .display {
-    height: 13rem;
+    height: 15rem;
     margin-bottom: 2rem;
     width: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+    padding: 0rem 2rem;
+    overflow: hidden;
+}
 
+.footer {
+    width: 10rem;
+    height: 0.7rem;
+    background-color: white;
+    margin: auto;
+    margin-top: 2.5rem;
+    border-radius: 20px;
 }
