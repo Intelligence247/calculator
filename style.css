@@ -15,13 +15,10 @@ body {
 
 main {
     width: 30rem;
-    height: 35rem;
+    height: 45rem;
     background-color: black;
     border: 1px solid white;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+
 
 }
 
@@ -29,6 +26,8 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 5rem);
     gap: 1rem;
+    width: max-content;
+    margin: auto;
 
 
 }
@@ -37,22 +36,33 @@ main {
     height: 5rem;
     position: relative;
     background-color: white;
-    border: 1px solid red;
-    font-size: 3rem;
+    /* border: 1px solid red; */
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     background-color: white;
     border-radius: 50%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+.sign {
+    background-color: #f69906;
+}
+
+/* #a0a0a0 */
 #equal {
-    height: 10rem;
-    background-color: blue;
-    border-radius: 0px;
+    height: 10.5rem;
+    border-radius: 10px;
 
 
+}
+
+.button:first-of-type {
+    background-color: #a0a0a0;
+    color: black;
 }
 
 /* #d7983d */
@@ -60,5 +70,15 @@ main {
 .button:last-child,
 .button:nth-last-child(2),
 .button:nth-last-child(3) {
-    margin-top: -5rem;
+    margin-top: -5.5rem;
+}
+
+.display {
+    height: 13rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
