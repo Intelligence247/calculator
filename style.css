@@ -14,10 +14,10 @@ body {
 }
 
 main {
-    width: 28rem;
-    height: 50rem;
+    width: 20rem;
+    height: 35rem;
     background-color: black;
-    border: 1px solid white;
+    border: 3px solid white;
     overflow: hidden;
     border-radius: 50px;
 
@@ -27,8 +27,8 @@ main {
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 5rem);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 3.5rem);
+    gap: 0.5rem;
     width: max-content;
     margin: auto;
 
@@ -37,11 +37,11 @@ main {
 }
 
 .button {
-    height: 5rem;
+    height: 3.5rem;
     position: relative;
     background-color: white;
     /* border: 1px solid red; */
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,11 +55,24 @@ main {
 
 .sign {
     background-color: #f69906;
+
+}
+
+.button:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.3);
+
+
+}
+
+.sign:hover {
+    background-color: #fca626;
+
 }
 
 /* #a0a0a0 */
 #equal {
-    height: 10.5rem;
+    height: 7rem;
     border-radius: 10px;
 
 
@@ -70,18 +83,22 @@ main {
     color: black;
 }
 
+.button:first-of-type:hover {
+    background-color: #cfcaca;
+}
+
 /* #d7983d */
 /* #ffd703 */
 .button:last-child,
 .button:nth-last-child(2),
 .button:nth-last-child(3) {
-    margin-top: -5.5rem;
+    margin-top: -3.5rem;
 }
 
 .display {
-    height: 15rem;
+    height: 10rem;
     margin-bottom: 2rem;
-    width: 30rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,10 +110,10 @@ main {
 }
 
 .footer {
-    width: 10rem;
-    height: 0.7rem;
+    width: 7rem;
+    height: 0.43rem;
     background-color: white;
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 2.7rem;
     border-radius: 20px;
 }
