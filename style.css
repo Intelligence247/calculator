@@ -14,8 +14,8 @@ body {
 }
 
 main {
-    width: 20rem;
-    height: 35rem;
+    width: 18rem;
+    height: 32rem;
     background-color: black;
     border: 3px solid white;
     overflow: hidden;
@@ -40,7 +40,6 @@ main {
     height: 3.5rem;
     position: relative;
     background-color: white;
-    /* border: 1px solid red; */
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -87,26 +86,31 @@ main {
     background-color: #cfcaca;
 }
 
-/* #d7983d */
-/* #ffd703 */
 .button:last-child,
 .button:nth-last-child(2),
 .button:nth-last-child(3) {
     margin-top: -3.5rem;
 }
 
+::-webkit-scrollbar {
+    height: 0px;
+    border-radius: 20px;
+    background-color: white;
+}
+
 .display {
-    height: 10rem;
-    margin-bottom: 2rem;
-    width: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 8rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 18rem;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: right;
     padding: 0rem 2rem;
-    overflow: hidden;
+    padding-top: 4rem;
+    overflow: auto;
+
+
 }
 
 .footer {
@@ -114,6 +118,6 @@ main {
     height: 0.43rem;
     background-color: white;
     margin: auto;
-    margin-top: 2.3rem;
+    margin-top: 2rem;
     border-radius: 20px;
 }
