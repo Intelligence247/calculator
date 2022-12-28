@@ -1,18 +1,20 @@
 // Selectors
 const buttons = Array.from(document.querySelectorAll('.button'))
 const display = document.querySelector('.display')
+const ans = document.querySelector('#ans')
 buttons.map(btn => {
     btn.addEventListener('click', (e) => {
         if (e.target.innerText === '=') {
             try {
-                return display.innerHTML = eval(display.innerText)
+                return ans.innerHTML = eval(display.innerText)
             } catch (error) {
-                display.innerHTML = 'Error Input'
+                ans.innerHTML = 'Error Input'
 
             }
 
         } else if (e.target.textContent === 'AC') {
-            return display.textContent = ''
+            display.textContent = ''
+            ans.textContent = ''
         } else if (e.target.textContent === '␡') {
             return display.textContent = display.innerHTML.slice(0, -1)
         } else if (e.target.innerHTML === '×') {
